@@ -1,0 +1,250 @@
+:root {
+  --fa-font-solid: "Font Awesome 6 Free"
+}
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.float {
+  float: left;
+}
+
+.nav-column {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.main {
+  width: 35%;
+  max-width: 875px;
+  padding-right: 20px;
+}
+.side {
+  width: 15%;
+  max-width: 375px;
+}
+.latest {
+  margin-left: 250px;
+  width: 50%;
+  max-width: 1250px;
+}
+.nav-item {
+  margin: 15px 25px;
+}
+.nav-logo {
+  margin-top: 10px;
+}
+.nav-1 {
+  margin-bottom: 35px;
+}
+.btn {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+}
+.search:after {
+  font: var(--fa-font-solid);
+  content: "\f002";
+  padding-left: 10px;
+  font-size: smaller;
+  color: slategray;
+}
+.logo {
+  text-decoration: none;
+  font-size: 50px;
+  background: linear-gradient(to bottom right, #00a669, #00cf41);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bars {
+  display: none;
+}
+.login {
+  text-decoration: none;
+}
+.login, .btn, .main p, .content-2 p, .image, .time, .date {
+  color: slategray;
+}
+.join {
+  text-decoration: none;
+  color: #ffa63c;
+  font-size: 20px;
+}
+.join, .logo, .main-title, .title {
+  font-weight: 900;
+}
+.main {
+  margin-left: 250px;
+}
+.main-title {
+  font-size: 45px;
+  margin: 10px 0;
+}
+.author, .title, .main p, .time, .date, .content-2 p, .image-module {
+  display: block;
+  margin: 10px 0;
+}
+.time, .date {
+  margin-top: 0;
+}
+.author {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 0;
+}
+.title {
+  font-size: 30px;
+}
+.module-1 {
+  height: 25%;
+  border-bottom: 1px solid lightgrey;
+}
+.module-1:last-child {
+  border-bottom: 0px;
+}
+.latest-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgray;
+}
+.content-1, .content-2, .image {
+  width: 33.3333%;
+}
+
+.content-2 p {
+  padding: 0 10px;
+}
+.module-2 {
+  height: 10%;
+  border-bottom: 1px solid lightgrey;
+}
+.time:after{
+  font: var(--fa-font-solid);
+  content: "\f111";
+  font-size: 5px;
+  color: slategray;
+  padding: 0 10px;
+  position: relative;
+  top: -4px;
+}
+.image-main, .image-module {
+  border: 1px solid #00cf41;
+}
+.image-main {
+  width: 100%;
+  height: 500px;
+}
+.image-module {
+  width: 33.3333%;
+  height: 200px;
+}
+.module-2 .title, .content-2 p {
+  padding-right: 25px;
+}
+@media screen and (max-width: 2000px) {
+  .side {clear: both;
+        margin-left: 250px;
+        width: 50%;
+        max-width: none;
+        }
+  .main {padding: 0;
+        width: 50%;
+        max-width: none;}
+}
+@media screen and (max-width: 1250px) {
+  .side, .main, .latest {
+    margin-left: 25px;
+    width: calc(100% - 250px);
+    max-width: fit-content;
+  }
+  .nav-column {
+    position: fixed;
+    right: 0;
+    left: auto;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content-2 {
+    display: none;
+  }
+  .content-1 {
+    width: 66.6666%;
+  }
+  .image-module {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-2, .nav-item {
+    display: none;
+  }
+  .nav-logo{
+    display: block;
+    float: left;
+  }
+  .bars {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    height: 0;
+    width: 56px;
+  }
+  .bars a {
+    float: right;
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #00cf41;
+  }
+  .nav-1 {
+    margin: 0;
+  }
+  .main {
+    margin-top: 53px;
+  }
+  .nav-column {
+    position: fixed;
+    right: auto;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 53px;
+  }
+  .nav-item {
+    margin: 0;
+  }
+  .main-title {
+    margin-top: 0;
+  }
+  .main, .side, .latest {
+    width: 100%;
+    margin-right: 25px;
+  }
+}
